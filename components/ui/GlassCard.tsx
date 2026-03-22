@@ -6,7 +6,7 @@ import { ReactNode } from 'react';
 interface GlassCardProps {
   children: ReactNode;
   className?: string;
-  glowColor?: 'red' | 'orange' | 'yellow';
+  glowColor?: string;
 }
 
 export default function GlassCard({ children, className = '', glowColor = 'red' }: GlassCardProps) {
