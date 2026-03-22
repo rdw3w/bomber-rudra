@@ -63,7 +63,8 @@ export default function DashboardPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: i * 0.1 }}
           >
-            <GlassCard glowColor={stat.glow as 'blue' | 'purple' | 'pink'} className="h-full">
+            {/* ✅ FIXED LINE (no wrong casting) */}
+            <GlassCard glowColor={stat.glow} className="h-full">
               <div className="flex items-start justify-between mb-4">
                 <div className={`p-3 rounded-xl bg-white/5 ${stat.color} bg-opacity-10 backdrop-blur-md border border-white/10`}>
                   <stat.icon className="w-6 h-6" />
